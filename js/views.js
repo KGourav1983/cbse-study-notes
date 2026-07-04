@@ -155,7 +155,7 @@ const Views = (() => {
               </p>
               <div class="hero-actions">
                 <a class="btn btn-primary" href="#/class-10">Jump to Class 10</a>
-                <a class="btn btn-outline" href="#/class-8">Browse all classes</a>
+                <button class="btn btn-outline" type="button" data-scroll-to="pick-your-class">Browse all classes</button>
               </div>
               <div class="hero-stats">
                 <div class="hero-stat"><div class="num">${manifest.classes.length}</div><div class="lbl">Classes covered</div></div>
@@ -176,7 +176,7 @@ const Views = (() => {
           </div>
         </section>
 
-        <section class="section container">
+        <section class="section container" id="pick-your-class">
           <div class="section-title-row">
             <h2 class="section-title">Pick your class</h2>
             <span class="section-note">// updates automatically as chapters are added</span>

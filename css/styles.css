@@ -117,6 +117,7 @@ p { margin: 0; }
   position: sticky; top: 0; z-index: 100;
   height: var(--header-h);
   display: flex; align-items: center;
+  background: var(--paper); /* fallback for browsers without color-mix() support */
   background: color-mix(in srgb, var(--paper) 88%, transparent);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
@@ -385,6 +386,7 @@ p { margin: 0; }
 .skeleton { position: relative; overflow: hidden; background: var(--line); border-radius: var(--radius-md); }
 .skeleton::after {
   content: ""; position: absolute; inset: 0; transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, var(--paper-raised), transparent); /* fallback */
   background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--paper-raised) 70%, transparent), transparent);
   animation: shimmer 1.3s infinite;
 }
@@ -503,7 +505,9 @@ p { margin: 0; }
 
 /* Study mode overlay */
 .study-overlay {
-  position: fixed; inset: 0; background: color-mix(in srgb, var(--ink-navy) 92%, transparent);
+  position: fixed; inset: 0;
+  background: var(--ink-navy); /* fallback */
+  background: color-mix(in srgb, var(--ink-navy) 92%, transparent);
   z-index: 500; display: flex; flex-direction: column; align-items: center; justify-content: center;
   padding: 24px; backdrop-filter: blur(4px);
 }
@@ -513,6 +517,19 @@ p { margin: 0; }
 .study-card-wrap .flip-card { height: 320px; }
 .study-nav { display: flex; align-items: center; gap: 18px; margin-top: 26px; }
 .study-nav .icon-btn { background: var(--paper-raised); }
+/* .btn-outline normally sits on the page background, so its text uses
+   --ink-navy. Here it sits on the dark Study Mode overlay (built from that
+   same --ink-navy variable), which made the label invisible — override
+   both colors so they contrast with the overlay instead. */
+.study-nav .btn-outline {
+  color: var(--paper);
+  border-color: var(--paper);
+  background: transparent;
+}
+.study-nav .btn-outline:hover {
+  color: var(--marigold);
+  border-color: var(--marigold);
+}
 
 /* =========================================================================
    Mock paper

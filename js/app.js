@@ -31,6 +31,16 @@
     if (btn) history.back();
   });
 
+  // Buttons that scroll to a section on the current page (e.g. "Browse all
+  // classes" on Home) use [data-scroll-to="<element id>"] rather than a
+  // "#id" href, so they don't get mistaken for a route change by the router.
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-scroll-to]");
+    if (!btn) return;
+    const target = document.getElementById(btn.getAttribute("data-scroll-to"));
+    if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
   Theme.init();
   PWA.init();
   Router.init(handleRoute);
