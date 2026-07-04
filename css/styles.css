@@ -228,7 +228,8 @@ p { margin: 0; }
    Hero (Home)
    ========================================================================= */
 .hero {
-  padding: 64px 0 40px;
+  padding-top: 64px;
+  padding-bottom: 40px;
   position: relative;
   overflow: hidden;
 }
@@ -594,7 +595,7 @@ p { margin: 0; }
 }
 @media (max-width: 620px) {
   .container { padding: 0 18px; }
-  .hero { padding: 40px 0 24px; }
+  .hero { padding-top: 40px; padding-bottom: 24px; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .exam-meta-bar { flex-direction: column; gap: 12px; }
   .footer-grid { flex-direction: column; }

@@ -164,14 +164,14 @@ const Views = (() => {
               </div>
             </div>
             <div class="exam-card" aria-hidden="true">
-              <div class="exam-card-row"><span>Roll No. ____</span><span>Time: 3 Hrs</span></div>
+              <div class="exam-card-row"><span>Class 8/9/10</span><span></span></div>
               <h3>What you get, every chapter</h3>
               <ul class="exam-card-list">
                 <li><span class="exam-tick">${CHECK}</span> Clean summary notes, exam-formatted</li>
                 <li><span class="exam-tick">${CHECK}</span> Top 25 Q&amp;A as flip cards + study mode</li>
                 <li><span class="exam-tick">${CHECK}</span> Full mock paper with answer key</li>
               </ul>
-              <div class="exam-card-footer"><span>Max Marks: <strong>80</strong></span><span>Section A–D</span></div>
+              <div class="exam-card-footer"><span>CBSE</span><span>NCERT</span></div>
             </div>
           </div>
         </section>
