@@ -53,6 +53,14 @@ const Data = (() => {
       .then(async (res) => {
         if (!res.ok) return { ok: false, status: res.status };
         const text = await res.text();
+        // Defense-in-depth: some static hosts (e.g. Cloudflare Pages without a
+        // top-level 404.html) treat this as a single-page app and silently
+        // rewrite ANY unmatched request — including a missing .md file — to
+        // index.html with a 200 OK. Without this check, that HTML would get
+        // rendered as if it were the chapter's markdown. A real .md file for
+        // this site never starts with a doctype/html tag, so treat that shape
+        // as "not actually found" rather than trusting the HTTP status alone.
+        if (/^\s*<(!doctype html|html)/i.test(text)) return { ok: false, status: res.status };
         return { ok: true, text };
       })
       .catch(() => ({ ok: false, status: 0 }));
