@@ -2,7 +2,7 @@
   "name": "CBSE Prep — Notes, Q&A & Mock Papers",
   "short_name": "CBSE Prep",
   "description": "CBSE-aligned chapter notes, Top 25 Q&A flip cards and mock papers for Classes 8, 9 and 10.",
-  "start_url": "/index.html",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait-primary",
