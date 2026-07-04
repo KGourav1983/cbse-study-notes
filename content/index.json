@@ -1,0 +1,228 @@
+{
+  "_readme": "This file is the single source of truth for site navigation. Add a class, subject or chapter here, then drop matching .md files into /content/<class-id>/<subject-id>/<chapter-id>/{summary,qna,mock-paper}.md — no code changes needed. Chapter titles below are a starting scaffold based on long-standing NCERT chapter names; CBSE periodically rationalises the syllabus, so please cross-check titles/order against the current official syllabus (cbseacademic.nic.in) before publishing. See README.md for the full workflow, including the optional generate-index.mjs helper.",
+  "siteName": "CBSE Prep",
+  "classes": [
+    {
+      "id": "class-8",
+      "label": "Class 8",
+      "tagline": "Foundation year — build the habits that carry into Class 9 and 10.",
+      "subjects": [
+        {
+          "id": "mathematics",
+          "label": "Mathematics",
+          "icon": "mathematics",
+          "chapters": [
+            { "id": "chapter-01-rational-numbers", "number": 1, "title": "Rational Numbers" },
+            { "id": "chapter-02-linear-equations-in-one-variable", "number": 2, "title": "Linear Equations in One Variable" },
+            { "id": "chapter-03-understanding-quadrilaterals", "number": 3, "title": "Understanding Quadrilaterals" },
+            { "id": "chapter-04-data-handling", "number": 4, "title": "Data Handling" },
+            { "id": "chapter-05-squares-and-square-roots", "number": 5, "title": "Squares and Square Roots" },
+            { "id": "chapter-06-cubes-and-cube-roots", "number": 6, "title": "Cubes and Cube Roots" },
+            { "id": "chapter-07-comparing-quantities", "number": 7, "title": "Comparing Quantities" },
+            { "id": "chapter-08-algebraic-expressions-and-identities", "number": 8, "title": "Algebraic Expressions and Identities" }
+          ]
+        },
+        {
+          "id": "science",
+          "label": "Science",
+          "icon": "science",
+          "chapters": [
+            { "id": "chapter-01-crop-production-and-management", "number": 1, "title": "Crop Production and Management" },
+            { "id": "chapter-02-microorganisms-friend-and-foe", "number": 2, "title": "Microorganisms: Friend and Foe" },
+            { "id": "chapter-03-synthetic-fibres-and-plastics", "number": 3, "title": "Synthetic Fibres and Plastics" },
+            { "id": "chapter-04-coal-and-petroleum", "number": 4, "title": "Coal and Petroleum" },
+            { "id": "chapter-05-combustion-and-flame", "number": 5, "title": "Combustion and Flame" },
+            { "id": "chapter-06-cell-structure-and-functions", "number": 6, "title": "Cell — Structure and Functions" },
+            { "id": "chapter-07-force-and-pressure", "number": 7, "title": "Force and Pressure" },
+            { "id": "chapter-08-sound", "number": 8, "title": "Sound" }
+          ]
+        },
+        {
+          "id": "social-science",
+          "label": "Social Science",
+          "icon": "social-science",
+          "chapters": [
+            { "id": "chapter-01-how-when-and-where", "number": 1, "title": "How, When and Where" },
+            { "id": "chapter-02-from-trade-to-territory", "number": 2, "title": "From Trade to Territory" },
+            { "id": "chapter-03-resources", "number": 3, "title": "Resources" },
+            { "id": "chapter-04-agriculture", "number": 4, "title": "Agriculture" },
+            { "id": "chapter-05-the-indian-constitution", "number": 5, "title": "The Indian Constitution" },
+            { "id": "chapter-06-understanding-secularism", "number": 6, "title": "Understanding Secularism" }
+          ]
+        },
+        {
+          "id": "english",
+          "label": "English",
+          "icon": "english",
+          "chapters": [
+            { "id": "chapter-01-the-best-christmas-present-in-the-world", "number": 1, "title": "The Best Christmas Present in the World" },
+            { "id": "chapter-02-the-tsunami", "number": 2, "title": "The Tsunami" },
+            { "id": "chapter-03-glimpses-of-the-past", "number": 3, "title": "Glimpses of the Past" },
+            { "id": "chapter-04-bepin-choudhurys-lapse-of-memory", "number": 4, "title": "Bepin Choudhury's Lapse of Memory" },
+            { "id": "chapter-05-the-summit-within", "number": 5, "title": "The Summit Within" },
+            { "id": "chapter-06-this-is-jodys-fawn", "number": 6, "title": "This is Jody's Fawn" }
+          ]
+        },
+        {
+          "id": "hindi",
+          "label": "Hindi",
+          "icon": "hindi",
+          "chapters": [
+            { "id": "chapter-01-laakh-ki-choodiyan", "number": 1, "title": "लाख की चूड़ियाँ" },
+            { "id": "chapter-02-bus-ki-yatra", "number": 2, "title": "बस की यात्रा" },
+            { "id": "chapter-03-deewano-ki-hasti", "number": 3, "title": "दीवानों की हस्ती" },
+            { "id": "chapter-04-chitthiyon-ki-anuthi-duniya", "number": 4, "title": "चिट्ठियों की अनूठी दुनिया" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "class-9",
+      "label": "Class 9",
+      "tagline": "Where board-exam habits start forming — get ahead before Class 10.",
+      "subjects": [
+        {
+          "id": "mathematics",
+          "label": "Mathematics",
+          "icon": "mathematics",
+          "chapters": [
+            { "id": "chapter-01-number-systems", "number": 1, "title": "Number Systems" },
+            { "id": "chapter-02-polynomials", "number": 2, "title": "Polynomials" },
+            { "id": "chapter-03-coordinate-geometry", "number": 3, "title": "Coordinate Geometry" },
+            { "id": "chapter-04-linear-equations-in-two-variables", "number": 4, "title": "Linear Equations in Two Variables" },
+            { "id": "chapter-05-introduction-to-euclids-geometry", "number": 5, "title": "Introduction to Euclid's Geometry" },
+            { "id": "chapter-06-lines-and-angles", "number": 6, "title": "Lines and Angles" },
+            { "id": "chapter-07-triangles", "number": 7, "title": "Triangles" },
+            { "id": "chapter-08-herons-formula", "number": 8, "title": "Heron's Formula" }
+          ]
+        },
+        {
+          "id": "science",
+          "label": "Science",
+          "icon": "science",
+          "chapters": [
+            { "id": "chapter-01-matter-in-our-surroundings", "number": 1, "title": "Matter in Our Surroundings" },
+            { "id": "chapter-02-is-matter-around-us-pure", "number": 2, "title": "Is Matter Around Us Pure?" },
+            { "id": "chapter-03-atoms-and-molecules", "number": 3, "title": "Atoms and Molecules" },
+            { "id": "chapter-04-structure-of-the-atom", "number": 4, "title": "Structure of the Atom" },
+            { "id": "chapter-05-the-fundamental-unit-of-life", "number": 5, "title": "The Fundamental Unit of Life" },
+            { "id": "chapter-06-tissues", "number": 6, "title": "Tissues" },
+            { "id": "chapter-07-motion", "number": 7, "title": "Motion" },
+            { "id": "chapter-08-force-and-laws-of-motion", "number": 8, "title": "Force and Laws of Motion" }
+          ]
+        },
+        {
+          "id": "social-science",
+          "label": "Social Science",
+          "icon": "social-science",
+          "chapters": [
+            { "id": "chapter-01-the-french-revolution", "number": 1, "title": "The French Revolution" },
+            { "id": "chapter-02-socialism-in-europe-and-the-russian-revolution", "number": 2, "title": "Socialism in Europe and the Russian Revolution" },
+            { "id": "chapter-03-india-size-and-location", "number": 3, "title": "India — Size and Location" },
+            { "id": "chapter-04-physical-features-of-india", "number": 4, "title": "Physical Features of India" },
+            { "id": "chapter-05-what-is-democracy-why-democracy", "number": 5, "title": "What is Democracy? Why Democracy?" },
+            { "id": "chapter-06-constitutional-design", "number": 6, "title": "Constitutional Design" }
+          ]
+        },
+        {
+          "id": "english",
+          "label": "English",
+          "icon": "english",
+          "chapters": [
+            { "id": "chapter-01-the-fun-they-had", "number": 1, "title": "The Fun They Had" },
+            { "id": "chapter-02-the-sound-of-music", "number": 2, "title": "The Sound of Music" },
+            { "id": "chapter-03-the-little-girl", "number": 3, "title": "The Little Girl" },
+            { "id": "chapter-04-a-truly-beautiful-mind", "number": 4, "title": "A Truly Beautiful Mind" },
+            { "id": "chapter-05-the-snake-and-the-mirror", "number": 5, "title": "The Snake and the Mirror" },
+            { "id": "chapter-06-my-childhood", "number": 6, "title": "My Childhood" }
+          ]
+        },
+        {
+          "id": "hindi",
+          "label": "Hindi",
+          "icon": "hindi",
+          "chapters": [
+            { "id": "chapter-01-do-bailon-ki-katha", "number": 1, "title": "दो बैलों की कथा" },
+            { "id": "chapter-02-lhasa-ki-or", "number": 2, "title": "ल्हासा की ओर" },
+            { "id": "chapter-03-upbhoktavaad-ki-sanskriti", "number": 3, "title": "उपभोक्तावाद की संस्कृति" },
+            { "id": "chapter-04-saanvle-sapno-ki-yaad", "number": 4, "title": "साँवले सपनों की याद" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "class-10",
+      "label": "Class 10",
+      "tagline": "Board exam year. This is where every mock paper starts paying off.",
+      "subjects": [
+        {
+          "id": "mathematics",
+          "label": "Mathematics",
+          "icon": "mathematics",
+          "chapters": [
+            { "id": "chapter-01-real-numbers", "number": 1, "title": "Real Numbers" },
+            { "id": "chapter-02-polynomials", "number": 2, "title": "Polynomials" },
+            { "id": "chapter-03-pair-of-linear-equations-in-two-variables", "number": 3, "title": "Pair of Linear Equations in Two Variables" },
+            { "id": "chapter-04-quadratic-equations", "number": 4, "title": "Quadratic Equations" },
+            { "id": "chapter-05-arithmetic-progressions", "number": 5, "title": "Arithmetic Progressions" },
+            { "id": "chapter-06-triangles", "number": 6, "title": "Triangles" },
+            { "id": "chapter-07-coordinate-geometry", "number": 7, "title": "Coordinate Geometry" },
+            { "id": "chapter-08-introduction-to-trigonometry", "number": 8, "title": "Introduction to Trigonometry" }
+          ]
+        },
+        {
+          "id": "science",
+          "label": "Science",
+          "icon": "science",
+          "chapters": [
+            { "id": "chapter-01-chemical-reactions-and-equations", "number": 1, "title": "Chemical Reactions and Equations" },
+            { "id": "chapter-02-acids-bases-and-salts", "number": 2, "title": "Acids, Bases and Salts" },
+            { "id": "chapter-03-metals-and-non-metals", "number": 3, "title": "Metals and Non-metals" },
+            { "id": "chapter-04-carbon-and-its-compounds", "number": 4, "title": "Carbon and Its Compounds" },
+            { "id": "chapter-05-life-processes", "number": 5, "title": "Life Processes" },
+            { "id": "chapter-06-control-and-coordination", "number": 6, "title": "Control and Coordination" },
+            { "id": "chapter-07-light-reflection-and-refraction", "number": 7, "title": "Light — Reflection and Refraction" },
+            { "id": "chapter-08-electricity", "number": 8, "title": "Electricity" }
+          ]
+        },
+        {
+          "id": "social-science",
+          "label": "Social Science",
+          "icon": "social-science",
+          "chapters": [
+            { "id": "chapter-01-the-rise-of-nationalism-in-europe", "number": 1, "title": "The Rise of Nationalism in Europe" },
+            { "id": "chapter-02-nationalism-in-india", "number": 2, "title": "Nationalism in India" },
+            { "id": "chapter-03-resources-and-development", "number": 3, "title": "Resources and Development" },
+            { "id": "chapter-04-water-resources", "number": 4, "title": "Water Resources" },
+            { "id": "chapter-05-power-sharing", "number": 5, "title": "Power Sharing" },
+            { "id": "chapter-06-federalism", "number": 6, "title": "Federalism" }
+          ]
+        },
+        {
+          "id": "english",
+          "label": "English",
+          "icon": "english",
+          "chapters": [
+            { "id": "chapter-01-a-letter-to-god", "number": 1, "title": "A Letter to God" },
+            { "id": "chapter-02-nelson-mandela-long-walk-to-freedom", "number": 2, "title": "Nelson Mandela: Long Walk to Freedom" },
+            { "id": "chapter-03-two-stories-about-flying", "number": 3, "title": "Two Stories About Flying" },
+            { "id": "chapter-04-from-the-diary-of-anne-frank", "number": 4, "title": "From the Diary of Anne Frank" },
+            { "id": "chapter-05-glimpses-of-india", "number": 5, "title": "Glimpses of India" },
+            { "id": "chapter-06-mijbil-the-otter", "number": 6, "title": "Mijbil the Otter" }
+          ]
+        },
+        {
+          "id": "hindi",
+          "label": "Hindi",
+          "icon": "hindi",
+          "chapters": [
+            { "id": "chapter-01-surdas-ke-pad", "number": 1, "title": "सूरदास के पद" },
+            { "id": "chapter-02-ram-lakshman-parshuram-samvad", "number": 2, "title": "राम-लक्ष्मण-परशुराम संवाद" },
+            { "id": "chapter-03-netaji-ka-chashma", "number": 3, "title": "नेताजी का चश्मा" },
+            { "id": "chapter-04-balgobin-bhagat", "number": 4, "title": "बालगोबिन भगत" }
+          ]
+        }
+      ]
+    }
+  ]
+}
