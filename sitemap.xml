@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Replace https://your-domain.example with your real deployed URL.
+
+  Note on SEO for this site: navigation happens client-side via URL
+  hash fragments (#/class-10/...), which browsers never send to the
+  server and which most search engines do not treat as separate
+  indexable pages. That's the tradeoff of a zero-build static SPA (see
+  README.md, "A note on SEO"). This sitemap lists the one URL that is
+  actually crawlable as-is; if search visibility for individual
+  chapters matters to you, the README explains the prerendering
+  option to fix this.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://your-domain.example/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

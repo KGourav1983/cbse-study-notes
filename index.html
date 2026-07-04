@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>CBSE Prep — Notes, Q&amp;A &amp; Mock Papers for Classes 8–10</title>
+<meta name="description" content="Free CBSE-aligned chapter notes, Top 25 Q&A practice cards and full mock papers for Class 8, 9 and 10 — organised by subject and chapter." />
+<meta name="theme-color" content="#1b2a4a" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="CBSE Prep" />
+<meta property="og:title" content="CBSE Prep — Notes, Q&A & Mock Papers for Classes 8–10" />
+<meta property="og:description" content="Free CBSE-aligned chapter notes, Top 25 Q&A practice cards and full mock papers for Class 8, 9 and 10." />
+<meta property="og:image" content="/icons/icon-512.png" />
+<meta property="og:locale" content="en_IN" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="CBSE Prep — Notes, Q&A & Mock Papers" />
+<meta name="twitter:description" content="Chapter notes, Q&A practice and mock papers for CBSE Classes 8–10." />
+
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json" />
+<link rel="icon" href="/icons/favicon-32.png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+<!-- Fonts: Newsreader (display), Inter (body), IBM Plex Mono (utility/marks) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#app-main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="#/" data-nav-home>
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f6f5f0" stroke-width="1.8"><path d="M4 5.5C6 4.2 9 4 12 5.2c3-1.2 6-1 8-.3v13c-2-.7-5-.9-8 .3-3-1.2-6-1-8-.3v-13Z" stroke-linejoin="round"/><path d="M12 5.2v13" /></svg>
+      </span>
+      CBSE Prep
+    </a>
+    <div class="header-actions">
+      <button class="install-btn" id="install-btn" type="button" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Install app
+      </button>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to night study mode">
+        <svg id="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="breadcrumb-bar" id="breadcrumb-bar" hidden>
+  <div class="container">
+    <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+  </div>
+</div>
+
+<main id="app-main"></main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">CBSE Prep</div>
+      <p class="footer-note">
+        Independently produced study notes for CBSE Classes 8–10. Content is written to align
+        with the CBSE/NCERT syllabus but is not affiliated with or endorsed by CBSE or NCERT.
+        Please cross-check against your school's current syllabus circular before an exam.
+      </p>
+    </div>
+    <div class="footer-meta">
+      Built as a static site<br />
+      No sign-up needed · Works offline once installed
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01" stroke-linecap="round"/></svg>
+  <span id="toast-msg"></span>
+</div>
+
+<script src="/vendor/marked.min.js"></script>
+<script src="/js/data.js"></script>
+<script src="/js/markdown.js"></script>
+<script src="/js/protection.js"></script>
+<script src="/js/flipcards.js"></script>
+<script src="/js/views.js"></script>
+<script src="/js/theme.js"></script>
+<script src="/js/pwa.js"></script>
+<script src="/js/router.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
