@@ -42,7 +42,7 @@
           "label": "Social Science",
           "icon": "social-science",
           "chapters": [
-            { "id": "chapter-01-natural-resources", "number": 1, "title": "Natural Resources" },
+            { "id": "chapter-01-natural-resources-and-their-use", "number": 1, "title": "Natural Resources and Their Use" },
             { "id": "chapter-02-from-trade-to-territory", "number": 2, "title": "From Trade to Territory" },
             { "id": "chapter-03-resources", "number": 3, "title": "Resources" },
             { "id": "chapter-04-agriculture", "number": 4, "title": "Agriculture" },
