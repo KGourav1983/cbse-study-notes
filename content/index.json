@@ -60,7 +60,8 @@
           "label": "Hindi",
           "icon": "hindi",
           "chapters": [
-            { "id": "chapter-01-laakh-ki-choodiyan", "number": 1, "title": "लाख की चूड़ियाँ" }
+            { "id": "chapter-01-swadesh", "number": 1, "title": "स्वदेश" },
+            { "id": "chapter-02-do-gorayya", "number": 2, "title": "दो गौरैया" }
           ]
         }
       ]
