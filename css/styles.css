@@ -576,8 +576,64 @@ p { margin: 0; }
 .empty-state p { color: var(--slate); line-height: 1.6; }
 
 /* =========================================================================
-   Footer
+   Feedback page
    ========================================================================= */
+.feedback-card {
+  max-width: 620px;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 32px 30px;
+}
+
+.feedback-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+.form-field { margin-bottom: 20px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+@media (max-width: 560px) { .form-row { grid-template-columns: 1fr; } }
+
+.form-field label {
+  display: block; font-weight: 600; font-size: 0.88rem; color: var(--ink-navy);
+  margin-bottom: 7px;
+}
+.form-field label span { font-weight: 400; color: var(--slate); font-size: 0.82rem; }
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%; font-family: var(--font-body); font-size: 0.95rem;
+  padding: 11px 14px; border-radius: 10px; border: 1.5px solid var(--line-strong);
+  background: var(--paper); color: var(--ink-navy);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none; border-color: var(--marigold-deep);
+  box-shadow: 0 0 0 3px rgba(232, 163, 61, 0.25); /* fallback for browsers without color-mix() */
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--marigold) 25%, transparent);
+}
+.form-field textarea { resize: vertical; min-height: 120px; line-height: 1.5; font-family: var(--font-body); }
+.form-field select { cursor: pointer; }
+
+.feedback-status {
+  padding: 12px 16px; border-radius: 10px; font-size: 0.88rem; margin-bottom: 18px;
+  display: flex; align-items: center; gap: 8px;
+}
+.feedback-status.success {
+  background: #e4f3ec; /* fallback for browsers without color-mix() support */
+  background: color-mix(in srgb, var(--success-green) 14%, var(--paper-raised));
+  color: var(--success-green);
+  border: 1px solid var(--success-green);
+}
+.feedback-status.error { background: #f8e9e6; color: var(--correction-red); border: 1px solid var(--correction-red-soft); }
+
+.feedback-privacy { margin-top: 14px; font-size: 0.78rem; color: var(--slate); line-height: 1.5; }
+
+.footer-feedback-link { margin-top: 12px; font-size: 0.85rem; color: var(--slate); }
+.footer-feedback-link a { color: var(--ink-navy); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.footer-feedback-link a:hover { color: var(--marigold-deep); }
 .site-footer { border-top: 1px solid var(--line); padding: 36px 0; margin-top: 40px; }
 .footer-grid { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; flex-wrap: wrap; }
 .footer-brand { font-family: var(--font-display); font-weight: 600; }

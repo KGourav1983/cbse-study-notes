@@ -181,6 +181,29 @@ Rules the parser relies on:
     that doesn't match one of the patterns above never silently
     disappears — it just won't get the special styling.
 
+## Feedback form
+
+The "Share feedback" link in the footer (`#/feedback`) lets visitors send you
+a message — content corrections, bug reports, suggestions — without needing
+any backend or database. It works via **Web3Forms**
+(https://web3forms.com), a free service built specifically for static sites:
+submissions are emailed straight to you, and nothing is stored on this site.
+
+**One-time setup (required — the form won't send anything until you do this):**
+1. Go to https://web3forms.com and enter the email address you want feedback
+   sent to. No account or password needed.
+2. You'll receive an **Access Key** by email — a short string.
+3. Open `js/feedback.js` and replace `REPLACE_WITH_YOUR_WEB3FORMS_ACCESS_KEY`
+   with that key.
+4. Deploy, then submit the form once yourself to confirm the email arrives.
+
+Until you do this, the form will show a friendly "not fully set up yet"
+message instead of silently failing — so you'll notice immediately if you
+forget this step, rather than losing real feedback from visitors.
+
+A hidden honeypot field filters out basic bot spam without needing a
+CAPTCHA.
+
 ## Content protection — please read before relying on this
 
 `js/protection.js` adds a right-click-disable, a selection-disable, a

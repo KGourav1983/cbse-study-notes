@@ -12,7 +12,8 @@
 
   async function handleRoute({ classId, subjectId, chapterId, resource }) {
     try {
-      if (!classId) await Views.renderHome(main);
+      if (classId === "feedback") await Views.renderFeedback(main);
+      else if (!classId) await Views.renderHome(main);
       else if (!subjectId) await Views.renderSubjects(main, classId);
       else if (!chapterId) await Views.renderChapters(main, classId, subjectId);
       else if (!resource) await Views.renderResourceTypes(main, classId, subjectId, chapterId);

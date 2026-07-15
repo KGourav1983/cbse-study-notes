@@ -508,6 +508,64 @@ const Views = (() => {
     else await renderMockPaper(main, ctx, result.text);
   }
 
+  /* ---------------- FEEDBACK ---------------- */
+
+  async function renderFeedback(main) {
+    setTitle(["Feedback"]);
+    setBreadcrumb([
+      { label: "Home", path: "/" },
+      { label: "Feedback", path: "/feedback" },
+    ]);
+    Protection.detach();
+
+    main.innerHTML = `
+      <div class="view container">
+        <div class="page-head">
+          ${backButtonHtml()}
+          <div class="page-eyebrow">We read every message</div>
+          <h1 class="page-title">Share your feedback</h1>
+          <p class="page-sub">Spotted an error in a chapter, have an idea, or just want to say hi? Tell us below — it goes straight to the person maintaining this site.</p>
+        </div>
+        <div class="feedback-card">
+          <div class="feedback-status" id="feedback-status" role="status" hidden></div>
+          <form id="feedback-form" novalidate>
+            <input type="text" id="feedback-hp" name="company" class="feedback-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="form-field">
+              <label for="feedback-category">What's this about?</label>
+              <select id="feedback-category" name="category">
+                <option value="Content correction">Content correction — a note, Q&amp;A, or mock paper looks wrong</option>
+                <option value="Bug report">Something's broken on the site</option>
+                <option value="Suggestion">A suggestion or feature idea</option>
+                <option value="General">General feedback</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="feedback-name">Name <span>(optional)</span></label>
+                <input type="text" id="feedback-name" name="name" autocomplete="name" />
+              </div>
+              <div class="form-field">
+                <label for="feedback-email">Email <span>(optional, if you'd like a reply)</span></label>
+                <input type="email" id="feedback-email" name="email" autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="feedback-message">Your message</label>
+              <textarea id="feedback-message" name="message" rows="6" required placeholder="Tell us what's on your mind..."></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit" id="feedback-submit">Send feedback</button>
+            <p class="feedback-privacy">Your message is sent directly via a third-party form service — it isn't stored anywhere on this site.</p>
+          </form>
+        </div>
+      </div>`;
+
+    Feedback.mount(main.querySelector("#feedback-form"));
+  }
+
   /* ---------------- 404 ---------------- */
 
   function renderNotFound(main, message) {
@@ -524,5 +582,5 @@ const Views = (() => {
       </div>`;
   }
 
-  return { renderHome, renderSubjects, renderChapters, renderResourceTypes, renderContent, renderNotFound };
+  return { renderHome, renderSubjects, renderChapters, renderResourceTypes, renderContent, renderFeedback, renderNotFound };
 })();

@@ -7,8 +7,8 @@
      version they loaded, but get fresh notes whenever they're online.
    ========================================================================= */
 
-const SHELL_CACHE = "cbse-prep-shell-v7";
-const CONTENT_CACHE = "cbse-prep-content-v7";
+const SHELL_CACHE = "cbse-prep-shell-v8";
+const CONTENT_CACHE = "cbse-prep-content-v8";
 
 const SHELL_ASSETS = [
   "/",
