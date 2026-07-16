@@ -62,7 +62,9 @@
           "chapters": [
             { "id": "chapter-01-swadesh", "number": 1, "title": "स्वदेश" },
             { "id": "chapter-02-do-gorayya", "number": 2, "title": "दो गौरैया" },
-            { "id": "chapter-03-ek-aashirwad", "number": 2, "title": "एक आशीर्वाद" }
+            { "id": "chapter-03-ek-aashirwad", "number": 3, "title": "एक आशीर्वाद" },
+            { "id": "chapter-04-ek-haridwar", "number": 4, "title": "हरिद्वार" },
+            { "id": "chapter-05-ek-kabirkedohe", "number": 5, "title": "कबीर के दोहे" }
           ]
         }
       ]

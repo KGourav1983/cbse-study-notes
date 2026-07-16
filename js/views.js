@@ -543,11 +543,11 @@ const Views = (() => {
 
             <div class="form-row">
               <div class="form-field">
-                <label for="feedback-name">Name <span>(optional)</span></label>
+                <label for="feedback-name">Name <span></span></label>
                 <input type="text" id="feedback-name" name="name" autocomplete="name" />
               </div>
               <div class="form-field">
-                <label for="feedback-email">Email <span>(optional, if you'd like a reply)</span></label>
+                <label for="feedback-email">Email <span></span></label>
                 <input type="email" id="feedback-email" name="email" autocomplete="email" />
               </div>
             </div>
